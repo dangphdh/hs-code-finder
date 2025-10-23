@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { LanguageProvider } from './context/LanguageContext';
 import LanguageToggle from './components/LanguageToggle';
-import ApiKeyManager from './components/ApiKeyManager';
+import SettingsButton from './components/SettingsButton';
+import SettingsDrawer from './components/SettingsDrawer';
 import SearchForm from './components/SearchForm';
 import ResultsList from './components/ResultsList';
 import { SearchResult } from './types/hsCode';
@@ -10,6 +11,7 @@ function AppContent() {
   const [results, setResults] = useState<SearchResult[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [settingsOpen, setSettingsOpen] = useState(false);
 
   const handleSearch = async (results: SearchResult[]) => {
     setResults(results);
@@ -25,12 +27,21 @@ function AppContent() {
 
   return (
     <div className="container">
-      <h1>HS Code Finder</h1>
-      <p>Find Harmonized System codes using natural language descriptions with AI-powered vector search</p>
+      <div className="app-header">
+        <div className="header-left">
+          <h1>HS Code Finder</h1>
+          <p>Find Harmonized System codes using natural language descriptions with AI-powered vector search</p>
+        </div>
+        <div className="header-right">
+          <LanguageToggle />
+          <SettingsButton onClick={() => setSettingsOpen(true)} />
+        </div>
+      </div>
       
-      <LanguageToggle />
-      
-      <ApiKeyManager />
+      <SettingsDrawer 
+        isOpen={settingsOpen}
+        onClose={() => setSettingsOpen(false)}
+      />
       
       <SearchForm 
         onResults={handleSearch}
