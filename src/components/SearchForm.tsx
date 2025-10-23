@@ -51,8 +51,8 @@ const SearchForm: React.FC<SearchFormProps> = ({ onResults, onLoadingChange, onE
 
   return (
     <form onSubmit={handleSubmit} className="search-form">
-      <div className="search-container">
-        <div className="search-input-group">
+      <div className="search-input-group">
+        <div className="search-input-wrapper">
           <input
             type="text"
             value={query}
@@ -60,39 +60,41 @@ const SearchForm: React.FC<SearchFormProps> = ({ onResults, onLoadingChange, onE
             placeholder={getPlaceholder()}
             className="search-input"
             disabled={isLoading}
+            autoFocus
           />
           <button
             type="submit"
             className="search-button"
             disabled={isLoading || !query.trim()}
+            title="Search (Enter to submit)"
           >
             <Search size={20} />
-            {isLoading ? 'Searching...' : 'Search'}
+            <span className="button-text">{isLoading ? 'Searching...' : 'Search'}</span>
           </button>
         </div>
+      </div>
 
-        <div className="search-options">
-          <div className="provider-selector">
-            <label htmlFor="provider-select">Provider:</label>
-            <select
-              id="provider-select"
-              value={selectedProvider}
-              onChange={(e) => setSelectedProvider(e.target.value)}
-              disabled={isLoading}
-              className="provider-select"
-            >
-              {providers.map(provider => (
-                <option key={provider.key} value={provider.key}>
-                  {provider.name} ({provider.dimensions}d)
-                  {provider.hasApiKey ? ' ✓' : ' (no key)'}
-                </option>
-              ))}
-            </select>
-          </div>
+      <div className="search-options">
+        <div className="provider-selector">
+          <label htmlFor="provider-select">Provider:</label>
+          <select
+            id="provider-select"
+            value={selectedProvider}
+            onChange={(e) => setSelectedProvider(e.target.value)}
+            disabled={isLoading}
+            className="provider-select"
+          >
+            {providers.map(provider => (
+              <option key={provider.key} value={provider.key}>
+                {provider.name} ({provider.dimensions}d)
+                {provider.hasApiKey ? ' ✓' : ' (no key)'}
+              </option>
+            ))}
+          </select>
+        </div>
 
-          <div className="search-mode-badge">
-            Search Mode: <span className={`badge-${searchMode}`}>{searchMode}</span>
-          </div>
+        <div className="search-mode-badge">
+          Search Mode: <span className={`badge-${searchMode}`}>{searchMode}</span>
         </div>
       </div>
 

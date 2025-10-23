@@ -1,0 +1,108 @@
+code,menu,description,chapter,section,keywords
+010121,Live Horses,Pure-bred breeding horses,01,I,horse;breeding;pure-bred;animal;equine
+010129,Live Horses,Other live horses,01,I,horse;animal;live;equine
+010290,Other Live Animals,Other live animals,01,I,animal;live;livestock;domestic;pet
+020110,Beef,Beef cattle meat fresh or chilled,02,I,beef;cattle;meat;fresh;chilled;livestock;food
+020120,Beef,Beef cattle meat frozen,02,I,beef;cattle;meat;frozen;food;livestock
+020210,Pork,Pork meat fresh or chilled,02,I,pork;meat;fresh;chilled;pig;food;livestock
+020220,Pork,Pork meat frozen,02,I,pork;meat;frozen;pig;food;livestock
+030111,Fish,Fish salmon fresh or chilled,03,I,fish;salmon;fresh;chilled;seafood;aquatic;food
+030112,Fish,Fish salmon frozen,03,I,fish;salmon;frozen;seafood;aquatic;food
+030211,Fish,Fish trout fresh or chilled,03,I,fish;trout;fresh;chilled;seafood;aquatic;food
+040221,Dairy,Milk and cream concentrated or with added sugar,04,I,milk;cream;dairy;concentrate;food;beverage
+040229,Dairy,Milk and cream other,04,I,milk;cream;dairy;food;beverage
+050110,Hides,Cowhides and calf skins fresh,05,I,hide;skin;cattle;leather;fresh;raw;material
+050210,Skins,Sheepskins with wool on,05,I,skin;wool;sheep;leather;material
+060210,Plants,Rose plants propagating material,06,II,rose;plant;flower;propagation;seed;ornamental;horticultural
+070111,Vegetables,Potatoes fresh or chilled,07,II,potato;vegetable;fresh;chilled;food;produce
+070190,Vegetables,Other edible vegetables fresh,07,II,vegetable;fresh;food;produce;edible
+080111,Nuts,Coconuts fresh or dried,08,II,coconut;nut;fresh;dried;food;tropical
+080121,Nuts,Brazil nuts fresh or dried,08,II,brazil;nut;fresh;dried;food;tropical
+090111,Coffee,Coffee not roasted not decaffeinated,09,II,coffee;bean;food;beverage;drink;tropical
+100191,Cereals,Wheat not durum other,10,II,wheat;cereal;grain;food;agriculture
+110100,Flour,Cereal flour,11,II,flour;grain;food;powder;mill;agriculture
+120710,Seeds,Soya beans dried,12,II,soya;bean;seed;dried;legume;food;agriculture
+150710,Oils,Crude soya-bean oil,15,III,soya;oil;crude;fat;food;agriculture;extraction
+160411,Fish Preparations,Fish preparations not canned,16,III,fish;preparation;processed;food;seafood
+170111,Sugar,Cane sugar raw,17,III,sugar;cane;raw;sweetener;food;agriculture
+180100,Cocoa,Cocoa beans whole or broken raw roasted,18,III,cocoa;bean;chocolate;food;tropical
+190211,Pasta,Pasta containing eggs,19,III,pasta;egg;food;cereal;noodle;prepared
+200191,Vegetables,Vegetable preparations not otherwise specified,20,IV,vegetable;preparation;processed;food;preserved
+210310,Sauces,Soy sauce,21,IV,soy;sauce;condiment;food;seasoning
+220421,Wine,Wine of fresh grapes other,22,IV,wine;grape;beverage;alcohol;drink;food
+230990,Animal Feed,Animal feed preparations other,23,V,animal;feed;food;livestock;preparation;agriculture
+240220,Cigarettes,Cigarettes containing tobacco,24,V,cigarette;tobacco;smoke;nicotine;product
+250010,Salt,Rock salt,25,V,salt;mineral;chemical;rock;mineral;food;deicer
+260111,Iron,Iron ores and concentrates non-agglomerated,26,V,iron;ore;mineral;metal;mining;raw;material
+270900,Petroleum,Petroleum oils crude,27,V,petroleum;oil;crude;energy;fuel;hydrocarbon;mineral
+280810,Nitrogen,Nitrogen chloride other derivatives,28,VI,nitrogen;chloride;chemical;compound;industrial
+290113,Hydrocarbons,Acyclic hydrocarbons other,29,VI,hydrocarbon;organic;chemical;carbon;compound
+300490,Medicines,Medicaments containing vitamins,30,VI,medicine;vitamin;pharmaceutical;health;drug
+310210,Fertilizer,Urea whether or not in aqueous solution,31,VI,urea;fertilizer;nitrogen;agricultural;chemical
+320814,Paints,Paints varnishes based on polyesters,32,VI,paint;varnish;coating;polyester;finish;industrial
+330730,Perfumes,Perfumes eau de cologne,33,VI,perfume;fragrance;scent;cologne;cosmetic;personal;care
+340220,Surfactants,Surfactant preparations washing cleaning,34,VI,surfactant;detergent;soap;cleaning;household;chemical
+350210,Resins,Casein formaldehyde resins,35,VI,resin;casein;formaldehyde;plastic;polymer;material
+360100,Powder,Powder for firearms,36,VI,powder;firearm;ammunition;explosive;military
+370191,Film,Photographic film rolls unexposed,37,VI,film;photography;photographic;imaging;optical
+380210,Carbon,Activated carbon,38,VI,carbon;activated;charcoal;filtration;treatment;chemical
+390210,Plastics,Polyethylene having specific gravity less,39,VII,polyethylene;plastic;polymer;synthetic;material
+400121,Rubber,Natural rubber latex not concentrated,40,VII,rubber;latex;natural;polymer;material;elastic
+410110,Leather,Leather of bovine animals,41,VII,leather;cattle;hide;tanned;material;footwear
+420310,Gloves,Gloves of leather,42,VII,glove;leather;clothing;hand;apparel;accessory
+440399,Wood,Wood in the rough other,44,VII,wood;timber;lumber;forest;raw;material;construction
+450110,Cork,Cork natural planks sheets,45,VII,cork;oak;natural;material;flooring;insulation
+460210,Textiles,Plaited or woven articles straw,46,VII,textile;straw;woven;plaited;fiber;material
+470191,Paper,Recovered paper pulp,47,VII,paper;pulp;recycled;fiber;material;industrial
+480261,Paper,Uncoated kraft paper or cardboard,48,VII,paper;kraft;cardboard;uncoated;packaging;material
+490100,Books,Bound books brochures pamphlets,49,VII,book;brochure;pamphlet;publication;printed;text
+500210,Silk,Silk yarn single,50,VIII,silk;yarn;fiber;textile;fabric;thread;natural
+510210,Wool,Wool yarn single,51,VIII,wool;yarn;fiber;textile;fabric;thread;natural
+520512,Cotton,Cotton plain weave dyed,52,VIII,cotton;textile;weave;dyed;fabric;apparel;fiber
+530210,Flax,Flax yarn single,53,VIII,flax;yarn;fiber;textile;fabric;thread;natural
+540231,Synthetics,Synthetic yarn nylon not textured,54,VIII,synthetic;nylon;yarn;fiber;textile;fabric
+550210,Artificial,Artificial filament yarn not textured,55,VIII,artificial;filament;yarn;fiber;textile;fabric;synthetic
+560313,Mineral,Mineral wool products thermal sound insulating,56,VIII,mineral;wool;insulation;thermal;sound;material;construction
+570210,Carpets,Carpets of wool,57,VIII,carpet;wool;flooring;textile;fabric;interior
+580200,Textiles,Special woven fabrics,58,VIII,textile;woven;fabric;special;apparel;industrial
+590800,Textiles,Woven fabrics of synthetic filaments,59,VIII,textile;woven;fabric;synthetic;apparel;industrial
+600210,Knits,Pile fabrics knitted or crocheted,60,VIII,knit;pile;fabric;apparel;textile;clothing
+610421,Pants,Trousers breeches of cotton,61,IX,trouser;breech;cotton;apparel;clothing;textile;pants
+620342,Jackets,Jackets of synthetic fibres,62,IX,jacket;synthetic;apparel;clothing;textile;outerwear
+630210,Bedding,Bedding of wool,63,IX,bedding;wool;textile;home;furnishing;fiber
+640299,Footwear,Other footwear,64,IX,footwear;shoe;boot;apparel;clothing;footwear
+650100,Hats,Hat-forms bodies blanks,65,IX,hat;headwear;apparel;clothing;textile
+660200,Umbrellas,Umbrellas parts thereof,66,IX,umbrella;accessory;rain;protection;apparel
+670490,Feathers,Other prepared feathers products,67,IX,feather;prepared;ornament;textile;material
+680291,Cement,Other articles of cement,68,IX,cement;construction;material;building;concrete
+690310,Tiles,Roof tiles of ceramics,69,X,tile;ceramic;roofing;building;construction;material
+700711,Glass,Flat glass safety glass,70,VII,glass;flat;safety;optical;transparent;material;building
+711319,Metals,Unwrought semi-manufactured precious metals,71,XV,precious;metal;gold;silver;platinum;jewelry;luxury
+720719,Alloys,Ferrosilicon other,72,XV,alloy;iron;silicon;metal;industrial;alloy
+730630,Metal,Tubes pipes fittings of iron steel,73,XV,metal;pipe;tube;fitting;steel;construction;plumbing
+740311,Copper,Copper cathodes unwrought,74,XV,copper;metal;unwrought;electrical;industrial;material
+750211,Nickel,Nickel unwrought not alloyed,75,XV,nickel;metal;unwrought;industrial;alloy;material
+760110,Aluminium,Aluminium unwrought not alloyed,76,XV,aluminum;metal;unwrought;lightweight;industrial;material
+770100,Tin,Tin unwrought not alloyed,77,XV,tin;metal;unwrought;coating;solder;material
+780110,Lead,Lead unwrought not alloyed,78,XV,lead;metal;unwrought;heavy;industrial;material
+790710,Zinc,Zinc dust,79,XV,zinc;metal;dust;powder;coating;galvanizing;material
+800110,Tin,Tin unwrought,80,XV,tin;metal;unwrought;coating;solder;material
+810110,Tungsten,Tungsten unwrought,81,XV,tungsten;metal;unwrought;refractory;industrial;material
+820519,Tools,Tools parts of other base metals,82,XV,tool;metal;hardware;equipment;implement;industrial
+830210,Locks,Locks of base metal,83,XV,lock;metal;hardware;security;door;fastening
+840733,Motors,Internal combustion piston engines,84,XVI,engine;motor;combustion;piston;automotive;machinery;industrial
+850212,Generators,DC generators motors,85,XVI,generator;motor;electrical;power;machinery;equipment;industrial
+860900,Containers,Containers for transport,86,XVII,container;transport;cargo;shipping;packaging;logistics
+870312,Vehicles,Motor cars other petrol,87,XVII,car;motor;vehicle;petrol;automobile;transportation;automotive
+880330,Aircraft,Aircraft other,88,XVII,aircraft;airplane;aviation;aerospace;transportation;vehicle
+890590,Vessels,Vessels other,89,XVII,vessel;ship;boat;maritime;water;transportation;cargo
+900290,Instruments,Surveying measuring optical instruments,90,XVIII,instrument;optical;measuring;surveying;precision;industrial
+910110,Watches,Wrist watches,91,XVIII,watch;wrist;timepiece;jewelry;accessory;precision
+920110,Pianos,Pianos electric or not,92,XVIII,piano;music;instrument;electric;musical;entertainment
+930200,Weapons,Swords bayonets spears,93,XIX,sword;weapon;bayonet;spear;military;historical
+940380,Furniture,Chairs wooden other,94,XX,chair;furniture;wooden;seating;interior;home;furnishing
+950620,Sports,Skates roller skates,95,XX,skate;roller;sports;recreation;equipment;outdoor
+960110,Cleaners,Vacuum cleaners,96,XX,vacuum;cleaner;household;appliance;cleaning;equipment;home
+970100,Antiques,Antiques,97,XX,antique;collectible;historical;vintage;rare;art
+980000,Provisions,Provisions of chapters not elsewhere specified,98,XXI,miscellaneous;general;various;other;category
+990000,Commodities,Commodities not classified elsewhere,99,XXI,miscellaneous;unclassified;general;other;category

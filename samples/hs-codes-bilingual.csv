@@ -1,0 +1,77 @@
+code,menu,menu_vi,description,description_vi,chapter,section,keywords,keywords_vi
+010121,Live Horses,Ngựa Sống,Pure-bred breeding horses,Những con ngựa giống thuần chủng,01,I,horse;breeding;pure-bred;animal;equine,ngựa;giống;thuần chủng;động vật;ngựa thuần
+010129,Live Horses,Ngựa Sống,Other live horses,Những con ngựa sống khác,01,I,horse;animal;live;equine,ngựa;động vật;sống;ngựa thuần
+010290,Other Live Animals,Động Vật Sống Khác,Other live animals,Những con vật sống khác,01,I,animal;live;livestock;domestic;pet,động vật;sống;gia súc;nuôi dưỡng;thú cưng
+020110,Beef,Thịt Bò,Beef cattle meat fresh or chilled,Thịt bò tươi hoặc lạnh,02,I,beef;cattle;meat;fresh;chilled;livestock;food,thịt bò;gia súc;thịt;tươi;lạnh;gia súc;thực phẩm
+020120,Beef,Thịt Bò,Beef cattle meat frozen,Thịt bò đông lạnh,02,I,beef;cattle;meat;frozen;food;livestock,thịt bò;gia súc;thịt;đông lạnh;thực phẩm;gia súc
+020210,Pork,Thịt Lợn,Pork meat fresh or chilled,Thịt lợn tươi hoặc lạnh,02,I,pork;meat;fresh;chilled;pig;food;livestock,thịt lợn;thịt;tươi;lạnh;lợn;thực phẩm;gia súc
+020220,Pork,Thịt Lợn,Pork meat frozen,Thịt lợn đông lạnh,02,I,pork;meat;frozen;pig;food;livestock,thịt lợn;thịt;đông lạnh;lợn;thực phẩm;gia súc
+030111,Fish,Cá,Fish salmon fresh or chilled,Cá hồi tươi hoặc lạnh,03,I,fish;salmon;fresh;chilled;seafood;aquatic;food,cá;cá hồi;tươi;lạnh;hải sản;thuỷ sản;thực phẩm
+030112,Fish,Cá,Fish salmon frozen,Cá hồi đông lạnh,03,I,fish;salmon;frozen;seafood;aquatic;food,cá;cá hồi;đông lạnh;hải sản;thuỷ sản;thực phẩm
+030211,Fish,Cá,Fish trout fresh or chilled,Cá tầm tươi hoặc lạnh,03,I,fish;trout;fresh;chilled;seafood;aquatic;food,cá;cá tầm;tươi;lạnh;hải sản;thuỷ sản;thực phẩm
+030212,Fish,Cá,Fish trout frozen,Cá tầm đông lạnh,03,I,fish;trout;frozen;seafood;aquatic;food,cá;cá tầm;đông lạnh;hải sản;thuỷ sản;thực phẩm
+040110,Milk,Sữa,Milk and cream non-concentrated,Sữa và kem không cô đặc,04,I,milk;dairy;non-concentrated;fresh;food;beverage,sữa;sữa kem;không cô đặc;tươi;thực phẩm;đồ uống
+040120,Milk,Sữa,Milk and cream concentrated or with sugar,Sữa và kem cô đặc hoặc có đường,04,I,milk;dairy;concentrated;sugar;food;beverage,sữa;sữa kem;cô đặc;đường;thực phẩm;đồ uống
+040221,Dairy,Sản Phẩm Từ Sữa,Milk and cream concentrated with added sugar,Sữa và kem cô đặc có đường,04,I,milk;cream;dairy;concentrate;food;beverage,sữa;kem;sữa kem;cô đặc;thực phẩm;đồ uống
+040229,Dairy,Sản Phẩm Từ Sữa,Milk and cream other,Sữa và kem khác,04,I,milk;cream;dairy;food;beverage,sữa;kem;sữa kem;thực phẩm;đồ uống
+050110,Hides,Da Sơ,Cowhides and calf skins fresh,Da bò và da bê tươi,05,I,hide;skin;cattle;leather;fresh;raw;material,da;da bò;da bê;tươi;da thô;nguyên liệu
+050190,Hides,Da Sơ,Other animal hides and skins fresh,Da động vật khác tươi,05,I,hide;skin;leather;fresh;raw;material,da;da thô;da động vật;tươi;nguyên liệu
+050210,Skins,Lông Da,Sheepskins with wool on,Da cừu còn lông,05,I,skin;wool;sheep;leather;material,da cừu;lông cừu;da;lông;nguyên liệu
+050290,Skins,Lông Da,Goatskins with hair on,Da dê còn lông,05,I,skin;hair;goat;leather;material,da dê;lông dê;da;lông;nguyên liệu
+060110,Meat Offal,Phụ Tạng Thịt,Beef cattle edible offal fresh,Phụ tạng bò ăn được tươi,06,I,offal;beef;cattle;edible;fresh;food,phụ tạng;bò;thịt;ăn được;tươi;thực phẩm
+060120,Meat Offal,Phụ Tạng Thịt,Beef cattle edible offal frozen,Phụ tạng bò ăn được đông lạnh,06,I,offal;beef;cattle;edible;frozen;food,phụ tạng;bò;thịt;ăn được;đông lạnh;thực phẩm
+070110,Potatoes,Khoai Tây,Potatoes fresh or chilled,Khoai tây tươi hoặc lạnh,07,I,potato;vegetables;fresh;chilled;food,khoai tây;rau;tươi;lạnh;thực phẩm
+070190,Vegetables,Rau Quả,Other edible vegetables fresh,Rau quả ăn được khác tươi,07,I,vegetables;fresh;food;produce,rau quả;ăn được;tươi;thực phẩm
+070310,Onions,Hành Tây,Onions fresh or chilled,Hành tây tươi hoặc lạnh,07,I,onion;vegetables;fresh;chilled;food,hành tây;rau;tươi;lạnh;thực phẩm
+070320,Garlic,Tỏi,Garlic fresh or chilled,Tỏi tươi hoặc lạnh,07,I,garlic;vegetables;fresh;chilled;food,tỏi;rau;tươi;lạnh;thực phẩm
+080210,Nuts,Hạt Dẻ,Tree nuts in shell not roasted,Hạt dẻ cạnh vỏ không rang,08,I,nuts;tree nuts;shell;roasted;food,hạt dẻ;hạt;vỏ;rang;thực phẩm
+080220,Nuts,Hạt Dẻ,Tree nuts without shell roasted or not,Hạt dẻ cạnh không vỏ rang hoặc không,08,I,nuts;tree nuts;shelled;roasted;food,hạt dẻ;hạt;không vỏ;rang;thực phẩm
+090111,Coffee,Cà Phê,Coffee not roasted not decaffeinated,Cà phê chưa rang chưa lọc caffeine,09,I,coffee;beverage;roasted;decaffeinated;food,cà phê;đồ uống;rang;caffeine;thực phẩm
+090112,Coffee,Cà Phê,Coffee not roasted decaffeinated,Cà phê chưa rang lọc caffeine,09,I,coffee;beverage;roasted;decaffeinated;caffeine;food,cà phê;đồ uống;rang;lọc caffeine;thực phẩm
+090121,Coffee,Cà Phê,Coffee roasted not decaffeinated,Cà phê rang chưa lọc caffeine,09,I,coffee;beverage;roasted;decaffeinated;food,cà phê;đồ uống;rang;caffeine;thực phẩm
+090122,Coffee,Cà Phê,Coffee roasted decaffeinated,Cà phê rang lọc caffeine,09,I,coffee;beverage;roasted;decaffeinated;caffeine;food,cà phê;đồ uống;rang;lọc caffeine;thực phẩm
+100110,Cereals,Ngũ Cốc,Wheat not milled,Lúa mì chưa xay,10,I,cereal;wheat;grain;milled;food,ngũ cốc;lúa mì;hạt;xay;thực phẩm
+100190,Cereals,Ngũ Cốc,Other cereals not milled,Ngũ cốc khác chưa xay,10,I,cereal;grain;milled;food,ngũ cốc;hạt;xay;thực phẩm
+100210,Cereals,Ngũ Cốc,Wheat flour,Bột lúa mì,10,I,cereal;wheat;flour;milled;food,ngũ cốc;lúa mì;bột;xay;thực phẩm
+100590,Cereals,Ngũ Cốc,Other cereal flour,Bột ngũ cốc khác,10,I,cereal;flour;milled;food,ngũ cốc;bột;xay;thực phẩm
+110100,Cereal Products,Sản Phẩm Ngũ Cốc,Cereal groats flaked,Cơm hạt ngũ cốc tước vỏ,11,I,cereal;groats;flaked;food,ngũ cốc;cơm hạt;vỏ;thực phẩm
+110210,Cereal Products,Sản Phẩm Ngũ Cốc,Malt not roasted,Malt chưa rang,11,I,malt;roasted;cereal;food,malt;rang;ngũ cốc;thực phẩm
+110220,Cereal Products,Sản Phẩm Ngũ Cốc,Malt roasted,Malt rang,11,I,malt;roasted;cereal;food,malt;rang;ngũ cốc;thực phẩm
+110812,Cereal Products,Sản Phẩm Ngũ Cốc,Starch from maize,Tinh bột từ ngô,11,I,starch;maize;corn;food,tinh bột;ngô;thực phẩm
+120100,Oil Seeds,Hạt Dầu,Soy beans,Đậu tương,12,I,oil seed;soy;bean;food;agriculture,hạt dầu;đậu tương;thực phẩm;nông nghiệp
+120210,Oil Seeds,Hạt Dầu,Ground nuts not roasted,Lạc chưa rang,12,I,oil seed;peanut;groundnut;roasted;food;agriculture,hạt dầu;lạc;rang;thực phẩm;nông nghiệp
+120300,Oil Seeds,Hạt Dầu,Copra,Cơm dừa,12,I,oil seed;coconut;copra;food;agriculture,hạt dầu;dừa;cơm dừa;thực phẩm;nông nghiệp
+120600,Oil Seeds,Hạt Dầu,Sunflower seeds,Hạt hướng dương,12,I,oil seed;sunflower;seed;food;agriculture,hạt dầu;hướng dương;hạt;thực phẩm;nông nghiệp
+120700,Oil Seeds,Hạt Dầu,Oil seeds other,Hạt dầu khác,12,I,oil seed;seed;food;agriculture,hạt dầu;hạt;thực phẩm;nông nghiệp
+130100,Lac,Sơn Tẩy,Shellac,Keo lạc,13,I,lac;shellac;resin;material;chemical,keo lạc;sơn tẩy;nhựa;nguyên liệu;hóa chất
+130200,Lac,Sơn Tẩy,Vegetable saps and extracts,Dịch và chiết xuất thực vật,13,I,plant;sap;extract;chemical;material,thực vật;dịch;chiết xuất;hóa chất;nguyên liệu
+140100,Fibers,Sợi,Vegetable fibers retting and fiber processing,Sợi thực vật ngâm nước và xử lý sợi,14,I,fiber;vegetable;raw;material;textile,sợi;thực vật;thô;nguyên liệu;dệt may
+140200,Fibers,Sợi,Cotton not carded or combed,Bông không ghi hay chải,14,I,fiber;cotton;carded;textile;material,sợi;bông;ghi;dệt may;nguyên liệu
+140300,Fibers,Sợi,Other vegetable fibers not carded,Sợi thực vật khác không ghi,14,I,fiber;vegetable;carded;textile;material,sợi;thực vật;ghi;dệt may;nguyên liệu
+150110,Animal Fats,Chất Béo Động Vật,Pig fat rendered,Chất béo lợn được nấu chảy,15,I,fat;animal;rendered;food;oil,chất béo;động vật;nấu chảy;thực phẩm;dầu
+150120,Animal Fats,Chất Béo Động Vật,Poultry fat rendered,Chất béo gia cầm được nấu chảy,15,I,fat;animal;poultry;rendered;food;oil,chất béo;động vật;gia cầm;nấu chảy;thực phẩm;dầu
+150130,Animal Fats,Chất Béo Động Vật,Beef fat rendered,Chất béo bò được nấu chảy,15,I,fat;animal;beef;rendered;food;oil,chất béo;động vật;bò;nấu chảy;thực phẩm;dầu
+150210,Plant Oils,Dầu Thực Vật,Soy oil,Dầu đậu tương,15,I,oil;vegetable;soy;food;cooking,dầu;thực vật;đậu tương;thực phẩm;nấu ăn
+150220,Plant Oils,Dầu Thực Vật,Peanut oil,Dầu lạc,15,I,oil;vegetable;peanut;food;cooking,dầu;thực vật;lạc;thực phẩm;nấu ăn
+160100,Meat Preparations,Chế Phẩm Thịt,Sausages and similar meat products,Xúc xích và các sản phẩm thịt tương tự,16,I,meat;sausage;preparation;food;processed,thịt;xúc xích;chế phẩm;thực phẩm;chế biến
+160210,Meat Preparations,Chế Phẩm Thịt,Meat and offal cooked prepared,Thịt và phụ tạng nấu chín chế biến,16,I,meat;cooked;preparation;food;processed,thịt;nấu chín;chế phẩm;thực phẩm;chế biến
+170110,Sugar,Đường,Cane sugar raw,Đường mía thô,17,I,sugar;cane;raw;food;sweetener,đường;mía;thô;thực phẩm;làm ngọt
+170191,Sugar,Đường,Cane sugar refined,Đường mía tinh luyện,17,I,sugar;cane;refined;food;sweetener,đường;mía;tinh luyện;thực phẩm;làm ngọt
+170210,Sugar,Đường,Beet sugar,Đường từ cây cần tây đường,17,I,sugar;beet;refined;food;sweetener,đường;cây cần tây đường;tinh luyện;thực phẩm;làm ngọt
+170220,Sugar,Đường,Beet sugar refined,Đường từ cây cần tây đường tinh luyện,17,I,sugar;beet;refined;food;sweetener,đường;cây cần tây đường;tinh luyện;thực phẩm;làm ngọt
+180100,Cocoa,Cacao,Cocoa beans fermented dried,Hạt cacao lên men sấy khô,18,I,cocoa;bean;fermented;dried;food;chocolate,cacao;hạt;lên men;sấy khô;thực phẩm;chocolate
+180200,Cocoa,Cacao,Cocoa shells husks waste,Vỏ hạt cacao thải bỏ,18,I,cocoa;shell;husk;waste;food,cacao;vỏ;hạt;thải bỏ;thực phẩm
+180300,Cocoa,Cacao,Cocoa paste unreduced cocoa solids,Mủ cacao không khử béo cacao rắn,18,I,cocoa;paste;solids;food;chocolate,cacao;mủ;rắn;thực phẩm;chocolate
+180400,Cocoa,Cacao,Cocoa butter fat,Bơ cacao chất béo,18,I,cocoa;butter;fat;food;chocolate,cacao;bơ;chất béo;thực phẩm;chocolate
+180500,Cocoa,Cacao,Cocoa powder not containing sugar,Bột cacao không có đường,18,I,cocoa;powder;sugar;food;chocolate,cacao;bột;đường;thực phẩm;chocolate
+190110,Cereals Preparations,Cháo Ngũ Cốc,Malt extract,Chiết xuất malt,19,I,cereal;malt;extract;food;beverage,ngũ cốc;malt;chiết xuất;thực phẩm;đồ uống
+190190,Cereals Preparations,Cháo Ngũ Cốc,Cereal flours and meals,Bột và cơm ngũ cốc,19,I,cereal;flour;meal;food,ngũ cốc;bột;cơm;thực phẩm
+190211,Cereals Preparations,Cháo Ngũ Cốc,Pasta uncooked without eggs,Mì ống chưa nấu không có trứng,19,I,pasta;noodle;uncooked;food,mì ống;mì;chưa nấu;thực phẩm
+190212,Cereals Preparations,Cháo Ngũ Cốc,Pasta uncooked with eggs,Mì ống chưa nấu có trứng,19,I,pasta;noodle;egg;uncooked;food,mì ống;mì;trứng;chưa nấu;thực phẩm
+190219,Cereals Preparations,Cháo Ngũ Cốc,Pasta other uncooked,Mì ống khác chưa nấu,19,I,pasta;noodle;uncooked;food,mì ống;mì;chưa nấu;thực phẩm
+190220,Cereals Preparations,Cháo Ngũ Cốc,Pasta cooked,Mì ống nấu chín,19,I,pasta;noodle;cooked;food,mì ống;mì;nấu chín;thực phẩm
+190230,Cereals Preparations,Cháo Ngũ Cốc,Couscous,Cơm lúa mạch,19,I,cereal;couscous;grain;food,ngũ cốc;cơm lúa mạch;hạt;thực phẩm
+200110,Fruit Vegetables,Trái Cây Rau Quả,Cucumbers gherkins prepared preserved,Dưa chuột cornichon chế biến bảo quản,20,I,vegetable;cucumber;gherkin;preserved;food,rau quả;dưa chuột;tỏi;chế biến;bảo quản;thực phẩm
+200190,Fruit Vegetables,Trái Cây Rau Quả,Vegetables prepared preserved other,Rau quả khác chế biến bảo quản,20,I,vegetable;preserved;food,rau quả;chế biến;bảo quản;thực phẩm
+200510,Fruit Vegetables,Trái Cây Rau Quả,Olives prepared preserved,Ô liu chế biến bảo quản,20,I,olive;fruit;preserved;food,ô liu;trái cây;chế biến;bảo quản;thực phẩm
+200810,Fruit Vegetables,Trái Cây Rau Quả,Fruits nuts cooked prepared,Trái cây hạt nấu chín chế biến,20,I,fruit;nut;cooked;prepared;food,trái cây;hạt;nấu chín;chế biến;thực phẩm

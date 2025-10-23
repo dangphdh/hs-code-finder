@@ -1,0 +1,108 @@
+code,description,chapter,section
+010121,Pure-bred breeding horses,01,I
+010129,Other live horses,01,I
+010290,Other live animals,01,I
+020110,Beef cattle meat fresh or chilled,02,I
+020120,Beef cattle meat frozen,02,I
+020210,Pork meat fresh or chilled,02,I
+020220,Pork meat frozen,02,I
+030111,Fish salmon fresh or chilled,03,I
+030112,Fish salmon frozen,03,I
+030211,Fish trout fresh or chilled,03,I
+040221,Milk and cream concentrated or with added sugar,04,I
+040229,Milk and cream other,04,I
+050110,Cowhides and calf skins fresh,05,I
+050210,Sheepskins with wool on,05,I
+060210,Rose plants propagating material,06,II
+070111,Potatoes fresh or chilled,07,II
+070190,Other edible vegetables fresh,07,II
+080111,Coconuts fresh or dried,08,II
+080121,Brazil nuts fresh or dried,08,II
+090111,Coffee not roasted not decaffeinated,09,II
+100191,Wheat not durum other,10,II
+110100,Cereal flour,11,II
+120710,Soya beans dried,12,II
+150710,Crude soya-bean oil,15,III
+160411,Fish preparations not canned,16,III
+170111,Cane sugar raw,17,III
+180100,Cocoa beans whole or broken raw roasted,18,III
+190211,Pasta containing eggs,19,III
+200191,Vegetable preparations not otherwise specified,20,IV
+210310,Soy sauce,21,IV
+220421,Wine of fresh grapes other,22,IV
+230990,Animal feed preparations other,23,V
+240220,Cigarettes containing tobacco,24,V
+250010,Rock salt,25,V
+260111,Iron ores and concentrates non-agglomerated,26,V
+270900,Petroleum oils crude,27,V
+280810,Nitrogen chloride other derivatives,28,VI
+290113,Acyclic hydrocarbons other,29,VI
+300490,Medicaments containing vitamins,30,VI
+310210,Urea whether or not in aqueous solution,31,VI
+320814,Paints varnishes based on polyesters,32,VI
+330730,Perfumes eau de cologne,33,VI
+340220,Surfactant preparations washing cleaning,34,VI
+350210,Casein formaldehyde resins,35,VI
+360100,Powder for firearms,36,VI
+370191,Photographic film rolls unexposed,37,VI
+380210,Activated carbon,38,VI
+390210,Polyethylene having specific gravity less,39,VII
+400121,Natural rubber latex not concentrated,40,VII
+410110,Leather of bovine animals,41,VII
+420310,Gloves of leather,42,VII
+440399,Wood in the rough other,44,VII
+450110,Cork natural planks sheets,45,VII
+460210,Plaited or woven articles straw,46,VII
+470191,Recovered paper pulp,47,VII
+480261,Uncoated kraft paper or cardboard,48,VII
+490100,Bound books brochures pamphlets,49,VII
+500210,Silk yarn not for retail sale,50,VIII
+510210,Wool yarn not for retail sale,51,VIII
+520512,Cotton plain weave dyed,52,VIII
+530210,Flax yarn single,53,VIII
+540231,Synthetic yarn nylon not textured,54,VIII
+550210,Artificial filament yarn not textured,55,VIII
+560313,Mineral wool products thermal sound insulating,56,VIII
+570210,Carpets of wool,57,VIII
+580200,Special woven fabrics,58,VIII
+590800,Woven fabrics of synthetic filaments,59,VIII
+600210,Pile fabrics knitted or crocheted,60,VIII
+610421,Trousers breeches of cotton,61,IX
+620342,Jackets of synthetic fibres,62,IX
+630210,Bedding of wool,63,IX
+640299,Other footwear,64,IX
+650100,Hat-forms bodies blanks,65,IX
+660200,Umbrellas parts thereof,66,IX
+670490,Other prepared feathers products,67,IX
+680291,Other articles of cement,68,IX
+690310,Roof tiles of ceramics,69,IX
+700711,Flat glass safety glass,70,VII
+711319,Unwrought semi-manufactured precious metals,71,XV
+720719,Ferrosilicon other,72,XV
+730630,Tubes pipes fittings of iron steel,73,XV
+740311,Copper cathodes unwrought,74,XV
+750211,Nickel unwrought not alloyed,75,XV
+760110,Aluminium unwrought not alloyed,76,XV
+770100,Tin unwrought not alloyed,77,XV
+780110,Lead unwrought not alloyed,78,XV
+790710,Zinc dust,79,XV
+800110,Tin unwrought,80,XV
+810110,Tungsten unwrought,81,XV
+820519,Tools parts of other base metals,82,XV
+830210,Locks of base metal,83,XV
+840733,Internal combustion piston engines,84,XVI
+850212,DC generators motors,85,XVI
+860900,Containers for transport,86,XVII
+870312,Motor cars other petrol,87,XVII
+880330,Aircraft other,88,XVII
+890590,Vessels other,89,XVII
+900290,Surveying measuring optical instruments,90,XVIII
+910110,Wrist watches,91,XVIII
+920110,Pianos electric or not,92,XVIII
+930200,Swords bayonets spears,93,XIX
+940380,Chairs wooden other,94,XX
+950620,Skates roller skates,95,XX
+960110,Vacuum cleaners,96,XX
+970100,Antiques,97,XX
+980000,Provisions of chapters not elsewhere specified,98,XXI
+990000,Commodities not classified elsewhere,99,XXI
