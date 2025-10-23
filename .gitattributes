@@ -1,0 +1,44 @@
+# Auto detect text files and normalize line endings to LF
+* text=auto
+
+# Shell scripts
+*.sh text eol=lf
+*.bash text eol=lf
+
+# Windows batch files
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# TypeScript and JavaScript
+*.ts text eol=lf
+*.tsx text eol=lf
+*.js text eol=lf
+*.jsx text eol=lf
+*.json text eol=lf
+
+# Python
+*.py text eol=lf
+
+# Markdown and docs
+*.md text eol=lf
+*.markdown text eol=lf
+*.txt text eol=lf
+
+# Images
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.gif binary
+*.ico binary
+*.svg text
+
+# Compressed
+*.zip binary
+*.tar binary
+*.gz binary
+
+# Node modules should be ignored by diff
+node_modules/ export-ignore
+dist/ export-ignore
+build/ export-ignore
