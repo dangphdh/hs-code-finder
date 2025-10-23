@@ -6,7 +6,6 @@ import { ElectronAPI } from '../types/electron';
  */
 export class ElectronStorage {
   private dataDir = 'storage';
-  private isDev = process.env.NODE_ENV === 'development';
   private electronAPI: ElectronAPI | null = null;
 
   constructor() {

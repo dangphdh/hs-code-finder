@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Download, Upload, Trash2 } from 'lucide-react';
+import { useState } from 'react';
+import { Download, Upload } from 'lucide-react';
 import { useElectronDialogs, useElectronFiles, useAppInfo } from '../hooks/useElectron';
 
 /**
@@ -8,7 +8,7 @@ import { useElectronDialogs, useElectronFiles, useAppInfo } from '../hooks/useEl
  */
 export function DesktopFeatures() {
   const { showOpenDialog, showSaveDialog, error: dialogError } = useElectronDialogs();
-  const { readFile, writeFile, listFiles, error: fileError } = useElectronFiles();
+  const { readFile, writeFile, error: fileError } = useElectronFiles();
   const { appInfo, loading: appInfoLoading } = useAppInfo();
 
   const [importedData, setImportedData] = useState<any>(null);
