@@ -3,6 +3,7 @@ import { ClientVectorSearch } from '../services/vectorSearch';
 import { FallbackSearch } from '../services/fallbackSearch';
 import { ApiKeyManager } from '../services/apiKeyManager';
 import { EmbeddingProviderFactory } from '../services/embedding/EmbeddingProviderFactory';
+import { useLanguage } from '../context/LanguageContext';
 import { SearchResult } from '../types/hsCode';
 
 /**
@@ -12,6 +13,7 @@ export const useHSCodeSearch = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [searchMode, setSearchMode] = useState<'vector' | 'fallback'>('vector');
+  const { language } = useLanguage();
 
   const vectorSearch = new ClientVectorSearch();
   const fallbackSearch = new FallbackSearch();
@@ -44,9 +46,9 @@ export const useHSCodeSearch = () => {
         }
       }
 
-      // Fallback to keyword search
+      // Fallback to keyword search with language support
       await fallbackSearch.loadBasicData();
-      const results = fallbackSearch.search(query, topK);
+      const results = fallbackSearch.search(query, topK, language);
       setSearchMode('fallback');
 
       if (results.length === 0) {
@@ -61,7 +63,7 @@ export const useHSCodeSearch = () => {
       // Try fallback if vector search completely fails
       try {
         await fallbackSearch.loadBasicData();
-        const results = fallbackSearch.search(query, topK);
+        const results = fallbackSearch.search(query, topK, language);
         setSearchMode('fallback');
         return results;
       } catch (fallbackErr) {
@@ -72,7 +74,7 @@ export const useHSCodeSearch = () => {
     } finally {
       setIsLoading(false);
     }
-  }, []);
+  }, [language]);
 
   return {
     search,

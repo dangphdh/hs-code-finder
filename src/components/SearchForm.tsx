@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useHSCodeSearch } from '../hooks/useHSCodeSearch';
 import { useEmbeddingProviders } from '../hooks/useHSCodeSearch';
+import { useLanguage } from '../context/LanguageContext';
 import { SearchResult } from '../types/hsCode';
 import { Search } from 'lucide-react';
 
@@ -15,6 +16,7 @@ const SearchForm: React.FC<SearchFormProps> = ({ onResults, onLoadingChange, onE
   const [selectedProvider, setSelectedProvider] = useState('openai-small');
   const { search, isLoading, error, searchMode } = useHSCodeSearch();
   const { providers } = useEmbeddingProviders();
+  const { language } = useLanguage();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -40,6 +42,13 @@ const SearchForm: React.FC<SearchFormProps> = ({ onResults, onLoadingChange, onE
     }
   };
 
+  const getPlaceholder = (): string => {
+    if (language === 'vi') {
+      return "Ví dụ: 'Trái táo', 'Vải cotton', 'Thành phần điện tử'";
+    }
+    return "e.g., 'Apple fruit', 'Cotton fabric', 'Electronics components'";
+  };
+
   return (
     <form onSubmit={handleSubmit} className="search-form">
       <div className="search-container">
@@ -48,7 +57,7 @@ const SearchForm: React.FC<SearchFormProps> = ({ onResults, onLoadingChange, onE
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="e.g., 'Apple fruit', 'Cotton fabric', 'Electronics components'"
+            placeholder={getPlaceholder()}
             className="search-input"
             disabled={isLoading}
           />

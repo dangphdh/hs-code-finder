@@ -1,5 +1,6 @@
 import React from 'react';
 import { SearchResult } from '../types/hsCode';
+import { useLanguage } from '../context/LanguageContext';
 import { formatSimilarity } from '../utils/helpers';
 import { Copy, ExternalLink } from 'lucide-react';
 
@@ -9,11 +10,24 @@ interface ResultsListProps {
 
 const ResultsList: React.FC<ResultsListProps> = ({ results }) => {
   const [copiedCode, setCopiedCode] = React.useState<string | null>(null);
+  const { language } = useLanguage();
 
   const copyToClipboard = (code: string) => {
     navigator.clipboard.writeText(code);
     setCopiedCode(code);
     setTimeout(() => setCopiedCode(null), 2000);
+  };
+
+  const getDescription = (result: SearchResult): string => {
+    return language === 'vi' && result.description_vi 
+      ? result.description_vi 
+      : result.description;
+  };
+
+  const getKeywords = (result: SearchResult): string[] => {
+    return language === 'vi' && result.keywords_vi 
+      ? result.keywords_vi 
+      : result.keywords || [];
   };
 
   if (results.length === 0) {
@@ -52,7 +66,7 @@ const ResultsList: React.FC<ResultsListProps> = ({ results }) => {
             </div>
 
             <div className="result-body">
-              <p className="result-description">{result.description}</p>
+              <p className="result-description">{getDescription(result)}</p>
               
               <div className="result-metadata">
                 <span className="meta-item">
@@ -61,9 +75,9 @@ const ResultsList: React.FC<ResultsListProps> = ({ results }) => {
                 <span className="meta-item">
                   <strong>Section:</strong> {result.section}
                 </span>
-                {result.keywords && result.keywords.length > 0 && (
+                {getKeywords(result).length > 0 && (
                   <span className="meta-item">
-                    <strong>Keywords:</strong> {result.keywords.join(', ')}
+                    <strong>Keywords:</strong> {getKeywords(result).join(', ')}
                   </span>
                 )}
               </div>

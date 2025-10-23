@@ -2,6 +2,7 @@ import { HSCode, SearchResult } from '../types/hsCode';
 
 /**
  * Keyword-based fallback search for when API is unavailable
+ * Supports multi-language search
  */
 export class FallbackSearch {
   private hsCodesData: HSCode[] = [];
@@ -29,9 +30,9 @@ export class FallbackSearch {
   }
 
   /**
-   * Keyword-based search
+   * Keyword-based search with language support
    */
-  search(query: string, topK: number = 10): SearchResult[] {
+  search(query: string, topK: number = 10, language: 'en' | 'vi' = 'en'): SearchResult[] {
     if (!this.isLoaded || this.hsCodesData.length === 0) {
       return [];
     }
@@ -51,7 +52,7 @@ export class FallbackSearch {
         embedding: [], // Not used for fallback
         provider: 'fallback',
         model: 'keyword',
-        similarity: this.calculateKeywordScore(queryWords, hsCode),
+        similarity: this.calculateKeywordScore(queryWords, hsCode, language),
         source: 'keyword-fallback' as const
       }))
       .filter(result => result.similarity > 0.05)
@@ -62,10 +63,18 @@ export class FallbackSearch {
   }
 
   /**
-   * Calculate keyword match score
+   * Calculate keyword match score with language support
    */
-  private calculateKeywordScore(queryWords: string[], hsCode: HSCode): number {
-    const text = `${hsCode.description} ${hsCode.keywords?.join(' ') || ''}`.toLowerCase();
+  private calculateKeywordScore(queryWords: string[], hsCode: HSCode, language: 'en' | 'vi' = 'en'): number {
+    // Get appropriate language fields
+    const description = language === 'vi' && hsCode.description_vi 
+      ? hsCode.description_vi 
+      : hsCode.description;
+    const keywords = language === 'vi' && hsCode.keywords_vi 
+      ? hsCode.keywords_vi 
+      : hsCode.keywords || [];
+    
+    const text = `${description} ${keywords.join(' ')}`.toLowerCase();
     const textLength = text.length;
 
     if (textLength === 0) return 0;
