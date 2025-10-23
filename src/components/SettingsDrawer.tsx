@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { X } from 'lucide-react';
 import ApiKeyManager from './ApiKeyManager';
-import './SettingsDrawer.css';
 
 interface SettingsDrawerProps {
   isOpen: boolean;
