@@ -1,10 +1,12 @@
 import { useState } from 'react';
+import { LanguageProvider } from './context/LanguageContext';
+import LanguageToggle from './components/LanguageToggle';
 import ApiKeyManager from './components/ApiKeyManager';
 import SearchForm from './components/SearchForm';
 import ResultsList from './components/ResultsList';
 import { SearchResult } from './types/hsCode';
 
-function App() {
+function AppContent() {
   const [results, setResults] = useState<SearchResult[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -25,6 +27,8 @@ function App() {
     <div className="container">
       <h1>HS Code Finder</h1>
       <p>Find Harmonized System codes using natural language descriptions with AI-powered vector search</p>
+      
+      <LanguageToggle />
       
       <ApiKeyManager />
       
@@ -49,6 +53,14 @@ function App() {
       
       <ResultsList results={results} />
     </div>
+  );
+}
+
+function App() {
+  return (
+    <LanguageProvider>
+      <AppContent />
+    </LanguageProvider>
   );
 }
 

@@ -1,10 +1,14 @@
-// Base HS Code interface
+// Base HS Code interface with dual language support
 export interface HSCode {
   code: string;
+  menu: string;
+  menu_vi?: string;
   description: string;
+  description_vi?: string;
   chapter: string;
   section: string;
   keywords?: string[];
+  keywords_vi?: string[];
 }
 
 // HS Code with embedding data

@@ -1,8 +1,10 @@
 import CryptoJS from 'crypto-js';
+import { electronStorage } from './electronStorage';
 
 /**
  * Manages API keys for embedding providers
- * Stores encrypted API keys in localStorage
+ * Stores encrypted API keys in localStorage (web) or filesystem (Electron)
+ * All methods are async to support both environments
  */
 export class ApiKeyManager {
   private static readonly STORAGE_KEY = 'hs_code_api_keys';
@@ -11,12 +13,12 @@ export class ApiKeyManager {
   /**
    * Save API key for a provider (encrypted)
    */
-  static saveApiKey(provider: string, apiKey: string): void {
+  static async saveApiKey(provider: string, apiKey: string): Promise<void> {
     try {
       const encrypted = CryptoJS.AES.encrypt(apiKey, this.ENCRYPTION_KEY).toString();
-      const keys = this.getAllKeys();
+      const keys = await this.getAllKeys();
       keys[provider] = encrypted;
-      localStorage.setItem(this.STORAGE_KEY, JSON.stringify(keys));
+      await electronStorage.setItem(this.STORAGE_KEY, JSON.stringify(keys));
     } catch (error) {
       console.error('Failed to save API key:', error);
       throw new Error('Failed to save API key securely');
@@ -26,9 +28,9 @@ export class ApiKeyManager {
   /**
    * Get API key for a provider (decrypted)
    */
-  static getApiKey(provider: string): string | null {
+  static async getApiKey(provider: string): Promise<string | null> {
     try {
-      const keys = this.getAllKeys();
+      const keys = await this.getAllKeys();
       const encrypted = keys[provider];
       
       if (!encrypted) return null;
@@ -46,11 +48,11 @@ export class ApiKeyManager {
   /**
    * Remove API key for a provider
    */
-  static removeApiKey(provider: string): void {
+  static async removeApiKey(provider: string): Promise<void> {
     try {
-      const keys = this.getAllKeys();
+      const keys = await this.getAllKeys();
       delete keys[provider];
-      localStorage.setItem(this.STORAGE_KEY, JSON.stringify(keys));
+      await electronStorage.setItem(this.STORAGE_KEY, JSON.stringify(keys));
     } catch (error) {
       console.error('Failed to remove API key:', error);
       throw new Error('Failed to remove API key');
@@ -60,23 +62,25 @@ export class ApiKeyManager {
   /**
    * Get all providers that have saved API keys
    */
-  static getAllProviders(): string[] {
-    return Object.keys(this.getAllKeys());
+  static async getAllProviders(): Promise<string[]> {
+    const keys = await this.getAllKeys();
+    return Object.keys(keys);
   }
 
   /**
    * Check if API key exists for a provider
    */
-  static hasApiKey(provider: string): boolean {
-    return this.getApiKey(provider) !== null;
+  static async hasApiKey(provider: string): Promise<boolean> {
+    const apiKey = await this.getApiKey(provider);
+    return apiKey !== null;
   }
 
   /**
    * Clear all saved API keys
    */
-  static clearAll(): void {
+  static async clearAll(): Promise<void> {
     try {
-      localStorage.removeItem(this.STORAGE_KEY);
+      await electronStorage.removeItem(this.STORAGE_KEY);
     } catch (error) {
       console.error('Failed to clear API keys:', error);
       throw new Error('Failed to clear API keys');
@@ -85,10 +89,11 @@ export class ApiKeyManager {
 
   /**
    * Get all stored API keys (encrypted)
+   * Note: In Electron environment, reads from storage, in web from merged localStorage
    */
-  private static getAllKeys(): Record<string, string> {
+  private static async getAllKeys(): Promise<Record<string, string>> {
     try {
-      const stored = localStorage.getItem(this.STORAGE_KEY);
+      const stored = await electronStorage.getItem(this.STORAGE_KEY);
       return stored ? JSON.parse(stored) : {};
     } catch (error) {
       console.error('Failed to load API keys:', error);

@@ -31,7 +31,7 @@ export const useHSCodeSearch = () => {
         throw new Error(`Provider ${providerKey} not found`);
       }
 
-      const apiKey = ApiKeyManager.getApiKey(provider.name.toLowerCase());
+      const apiKey = await ApiKeyManager.getApiKey(provider.name.toLowerCase());
       
       if (apiKey) {
         try {
@@ -96,34 +96,40 @@ export const useEmbeddingProviders = () => {
   }>>([]);
 
   useEffect(() => {
-    const loadProviders = () => {
+    const loadProviders = async () => {
       const providerMap = EmbeddingProviderFactory.getAllProviders();
-      const providerList = Array.from(providerMap.entries()).map(([key, provider]) => ({
-        key,
-        name: provider.name,
-        model: provider.model,
-        dimensions: provider.dimensions,
-        hasApiKey: ApiKeyManager.hasApiKey(provider.name.toLowerCase())
-      }));
+      const providerList = [];
+
+      for (const [key, provider] of providerMap.entries()) {
+        const hasApiKey = await ApiKeyManager.hasApiKey(provider.name.toLowerCase());
+        providerList.push({
+          key,
+          name: provider.name,
+          model: provider.model,
+          dimensions: provider.dimensions,
+          hasApiKey
+        });
+      }
+
       setProviders(providerList);
     };
 
     loadProviders();
   }, []);
 
-  const saveApiKey = (providerName: string, apiKey: string) => {
-    ApiKeyManager.saveApiKey(providerName.toLowerCase(), apiKey);
+  const saveApiKey = async (providerName: string, apiKey: string) => {
+    await ApiKeyManager.saveApiKey(providerName.toLowerCase(), apiKey);
     setProviders(prev => prev.map(p => ({
       ...p,
-      hasApiKey: ApiKeyManager.hasApiKey(p.name.toLowerCase())
+      hasApiKey: p.name.toLowerCase() === providerName.toLowerCase()
     })));
   };
 
-  const removeApiKey = (providerName: string) => {
-    ApiKeyManager.removeApiKey(providerName.toLowerCase());
+  const removeApiKey = async (providerName: string) => {
+    await ApiKeyManager.removeApiKey(providerName.toLowerCase());
     setProviders(prev => prev.map(p => ({
       ...p,
-      hasApiKey: ApiKeyManager.hasApiKey(p.name.toLowerCase())
+      hasApiKey: p.name.toLowerCase() === providerName.toLowerCase() ? false : p.hasApiKey
     })));
   };
 
