@@ -1,9 +1,11 @@
 import { HSCodeEmbedding, SearchResult } from '../types/hsCode';
 import { EmbeddingProvider } from '../types/embedding';
+import { BinaryEmbeddingsService } from './binaryEmbeddings';
 
 /**
  * Client-side Vector Search Service
  * Performs similarity search on precomputed embeddings
+ * Supports both JSON and binary formats
  */
 export class ClientVectorSearch {
   private hsCodesData: HSCodeEmbedding[] = [];
@@ -12,21 +14,41 @@ export class ClientVectorSearch {
 
   /**
    * Load precomputed embeddings for a specific provider and model
+   * First tries to load binary format (.bin), falls back to JSON
    */
   async loadPrecomputedEmbeddings(provider: string, model: string): Promise<void> {
     const modelKey = model.replace(/\./g, '-');
-    const dataPath = `/data/${provider.toLowerCase()}-embeddings/${modelKey}.json`;
+    const binaryPath = `/data/${provider.toLowerCase()}-embeddings/${modelKey}.bin`;
+    const jsonPath = `/data/${provider.toLowerCase()}-embeddings/${modelKey}.json`;
     
     try {
-      const response = await fetch(dataPath);
-      if (!response.ok) {
-        throw new Error(`Failed to load embeddings: ${response.statusText}`);
+      // Try loading binary format first
+      console.log(`📦 Loading embeddings: ${provider}/${model}`);
+      console.log(`   Trying binary format: ${binaryPath}`);
+      
+      const binaryResponse = await fetch(binaryPath);
+      if (binaryResponse.ok) {
+        const arrayBuffer = await binaryResponse.arrayBuffer();
+        const { embeddings } = BinaryEmbeddingsService.binaryToEmbeddings(arrayBuffer);
+        this.hsCodesData = embeddings;
+        this.currentProvider = provider;
+        this.currentModel = model;
+        console.log(`   ✓ Loaded ${embeddings.length} embeddings from binary format`);
+        return;
       }
       
-      const data = await response.json();
+      // Fallback to JSON format
+      console.log(`   Binary not found, trying JSON: ${jsonPath}`);
+      const jsonResponse = await fetch(jsonPath);
+      if (!jsonResponse.ok) {
+        throw new Error(`Failed to load embeddings: ${jsonResponse.statusText}`);
+      }
+      
+      const data = await jsonResponse.json();
       this.hsCodesData = data.hs_codes || [];
       this.currentProvider = provider;
       this.currentModel = model;
+      console.log(`   ✓ Loaded ${this.hsCodesData.length} embeddings from JSON format`);
     } catch (error) {
       console.error('Failed to load precomputed embeddings:', error);
       throw new Error(`Could not load embeddings for ${provider}/${model}`);
