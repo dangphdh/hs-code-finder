@@ -1,0 +1,683 @@
+{
+  "hs_codes": [
+    {
+      "code": "010121",
+      "description": "Pure-bred breeding horses",
+      "chapter": "01",
+      "section": "I",
+      "keywords": ["horse", "breeding", "pure-bred", "animal"]
+    },
+    {
+      "code": "020110",
+      "description": "Beef cattle meat, fresh or chilled",
+      "chapter": "02",
+      "section": "I",
+      "keywords": ["beef", "cattle", "meat", "fresh", "chilled"]
+    },
+    {
+      "code": "030111",
+      "description": "Fish, salmon, fresh or chilled",
+      "chapter": "03",
+      "section": "I",
+      "keywords": ["fish", "salmon", "fresh", "chilled", "seafood"]
+    },
+    {
+      "code": "040221",
+      "description": "Milk and cream, concentrated or with added sugar",
+      "chapter": "04",
+      "section": "I",
+      "keywords": ["milk", "cream", "dairy", "concentrate"]
+    },
+    {
+      "code": "050110",
+      "description": "Cowhides and calf skins, fresh",
+      "chapter": "05",
+      "section": "I",
+      "keywords": ["hide", "calf", "skin", "leather", "raw"]
+    },
+    {
+      "code": "060210",
+      "description": "Rose plants, propagating material",
+      "chapter": "06",
+      "section": "II",
+      "keywords": ["rose", "flower", "plant", "propagation"]
+    },
+    {
+      "code": "070111",
+      "description": "Potatoes, fresh or chilled",
+      "chapter": "07",
+      "section": "II",
+      "keywords": ["potato", "vegetable", "fresh", "chilled"]
+    },
+    {
+      "code": "080910",
+      "description": "Apple fruit, fresh",
+      "chapter": "08",
+      "section": "II",
+      "keywords": ["apple", "fruit", "fresh"]
+    },
+    {
+      "code": "090111",
+      "description": "Coffee, not roasted or decaffeinated",
+      "chapter": "09",
+      "section": "II",
+      "keywords": ["coffee", "bean", "unroasted", "beverage"]
+    },
+    {
+      "code": "110100",
+      "description": "Cereal flour, wheat",
+      "chapter": "11",
+      "section": "II",
+      "keywords": ["flour", "wheat", "grain", "powder"]
+    },
+    {
+      "code": "120740",
+      "description": "Seeds of cotton, for sowing",
+      "chapter": "12",
+      "section": "II",
+      "keywords": ["cotton", "seed", "textile", "sowing"]
+    },
+    {
+      "code": "130100",
+      "description": "Shellac and seed lac, processed",
+      "chapter": "13",
+      "section": "III",
+      "keywords": ["shellac", "lac", "resin", "coating"]
+    },
+    {
+      "code": "140110",
+      "description": "Bamboo material, whether or not split",
+      "chapter": "14",
+      "section": "III",
+      "keywords": ["bamboo", "plant", "fiber", "material"]
+    },
+    {
+      "code": "150110",
+      "description": "Lard and other pig fat, rendered",
+      "chapter": "15",
+      "section": "III",
+      "keywords": ["lard", "fat", "oil", "rendered"]
+    },
+    {
+      "code": "160100",
+      "description": "Sausages and similar products of meat",
+      "chapter": "16",
+      "section": "III",
+      "keywords": ["sausage", "meat", "processed", "food"]
+    },
+    {
+      "code": "170111",
+      "description": "Sugar cane, refined, solid",
+      "chapter": "17",
+      "section": "III",
+      "keywords": ["sugar", "cane", "sweetener", "refined"]
+    },
+    {
+      "code": "180100",
+      "description": "Cocoa beans, whole or broken",
+      "chapter": "18",
+      "section": "III",
+      "keywords": ["cocoa", "chocolate", "bean"]
+    },
+    {
+      "code": "190112",
+      "description": "Cereal food, grain meal",
+      "chapter": "19",
+      "section": "III",
+      "keywords": ["cereal", "grain", "breakfast", "food"]
+    },
+    {
+      "code": "200111",
+      "description": "Vegetables, preserved by salt",
+      "chapter": "20",
+      "section": "IV",
+      "keywords": ["vegetable", "preserved", "salt", "pickled"]
+    },
+    {
+      "code": "210111",
+      "description": "Food preparations, essences, extracts",
+      "chapter": "21",
+      "section": "IV",
+      "keywords": ["essence", "extract", "flavor", "food"]
+    },
+    {
+      "code": "220421",
+      "description": "Wine, still, light",
+      "chapter": "22",
+      "section": "IV",
+      "keywords": ["wine", "beverage", "alcohol", "grape"]
+    },
+    {
+      "code": "240120",
+      "description": "Cigarettes of tobacco",
+      "chapter": "24",
+      "section": "IV",
+      "keywords": ["cigarette", "tobacco", "smoking"]
+    },
+    {
+      "code": "250100",
+      "description": "Salt, for cooking",
+      "chapter": "25",
+      "section": "V",
+      "keywords": ["salt", "mineral", "seasoning"]
+    },
+    {
+      "code": "260111",
+      "description": "Iron ore, non-agglomerated",
+      "chapter": "26",
+      "section": "V",
+      "keywords": ["iron", "ore", "mineral", "metal"]
+    },
+    {
+      "code": "270112",
+      "description": "Coal, anthracite",
+      "chapter": "27",
+      "section": "V",
+      "keywords": ["coal", "fuel", "energy", "mineral"]
+    },
+    {
+      "code": "280410",
+      "description": "Hydrogen, compressed",
+      "chapter": "28",
+      "section": "VI",
+      "keywords": ["hydrogen", "gas", "chemical", "element"]
+    },
+    {
+      "code": "290100",
+      "description": "Hydrocarbons, saturated",
+      "chapter": "29",
+      "section": "VI",
+      "keywords": ["hydrocarbon", "organic", "chemical", "petroleum"]
+    },
+    {
+      "code": "300110",
+      "description": "Pharmaceuticals, glands and organs",
+      "chapter": "30",
+      "section": "VI",
+      "keywords": ["pharmaceutical", "medicine", "drug", "organ"]
+    },
+    {
+      "code": "310100",
+      "description": "Fertilizers, animal origin",
+      "chapter": "31",
+      "section": "VI",
+      "keywords": ["fertilizer", "manure", "agriculture", "soil"]
+    },
+    {
+      "code": "320411",
+      "description": "Leather, tanning extracts",
+      "chapter": "32",
+      "section": "VI",
+      "keywords": ["leather", "tanning", "hide", "material"]
+    },
+    {
+      "code": "330300",
+      "description": "Essential oils, perfume raw materials",
+      "chapter": "33",
+      "section": "VI",
+      "keywords": ["essential oil", "perfume", "fragrance"]
+    },
+    {
+      "code": "340110",
+      "description": "Soap from organic acid",
+      "chapter": "34",
+      "section": "VI",
+      "keywords": ["soap", "detergent", "cleaning", "organic"]
+    },
+    {
+      "code": "350110",
+      "description": "Starch, wheat",
+      "chapter": "35",
+      "section": "VI",
+      "keywords": ["starch", "corn", "adhesive", "powder"]
+    },
+    {
+      "code": "360300",
+      "description": "Explosives, dynamite",
+      "chapter": "36",
+      "section": "VI",
+      "keywords": ["explosive", "dynamite", "ammunition", "hazard"]
+    },
+    {
+      "code": "370110",
+      "description": "Photographic film, sensitized",
+      "chapter": "37",
+      "section": "VI",
+      "keywords": ["film", "photography", "sensitized", "media"]
+    },
+    {
+      "code": "380210",
+      "description": "Activated carbon",
+      "chapter": "38",
+      "section": "VI",
+      "keywords": ["carbon", "activated", "filtering", "purification"]
+    },
+    {
+      "code": "390111",
+      "description": "Plastic, polyethylene",
+      "chapter": "39",
+      "section": "VII",
+      "keywords": ["plastic", "polymer", "polyethylene", "material"]
+    },
+    {
+      "code": "400111",
+      "description": "Rubber, natural",
+      "chapter": "40",
+      "section": "VII",
+      "keywords": ["rubber", "natural", "latex", "material"]
+    },
+    {
+      "code": "410111",
+      "description": "Raw hides and skins of cattle",
+      "chapter": "41",
+      "section": "VII",
+      "keywords": ["hide", "skin", "leather", "raw"]
+    },
+    {
+      "code": "420111",
+      "description": "Handbag of leather",
+      "chapter": "42",
+      "section": "VII",
+      "keywords": ["handbag", "leather", "accessories", "bag"]
+    },
+    {
+      "code": "430111",
+      "description": "Fur skin, dressed",
+      "chapter": "43",
+      "section": "VII",
+      "keywords": ["fur", "skin", "leather", "dressed"]
+    },
+    {
+      "code": "440111",
+      "description": "Firewood of coniferous wood",
+      "chapter": "44",
+      "section": "VII",
+      "keywords": ["wood", "firewood", "timber", "coniferous"]
+    },
+    {
+      "code": "450111",
+      "description": "Cork, natural",
+      "chapter": "45",
+      "section": "VII",
+      "keywords": ["cork", "natural", "wood", "material"]
+    },
+    {
+      "code": "460111",
+      "description": "Plait, rush, straw",
+      "chapter": "46",
+      "section": "VII",
+      "keywords": ["plait", "rush", "straw", "material"]
+    },
+    {
+      "code": "470111",
+      "description": "Recycled paper and paperboard",
+      "chapter": "47",
+      "section": "VII",
+      "keywords": ["paper", "pulp", "recycled", "material"]
+    },
+    {
+      "code": "480100",
+      "description": "Paper and paperboard, coated",
+      "chapter": "48",
+      "section": "VII",
+      "keywords": ["paper", "cardboard", "coated", "material"]
+    },
+    {
+      "code": "490100",
+      "description": "Books and printed matter",
+      "chapter": "49",
+      "section": "VII",
+      "keywords": ["book", "printed", "publication", "media"]
+    },
+    {
+      "code": "500111",
+      "description": "Silk, not twisted",
+      "chapter": "50",
+      "section": "VIII",
+      "keywords": ["silk", "fabric", "textile", "fiber"]
+    },
+    {
+      "code": "510111",
+      "description": "Wool, not carded",
+      "chapter": "51",
+      "section": "VIII",
+      "keywords": ["wool", "fiber", "textile", "animal"]
+    },
+    {
+      "code": "520111",
+      "description": "Cotton, not carded",
+      "chapter": "52",
+      "section": "VIII",
+      "keywords": ["cotton", "fiber", "textile", "plant"]
+    },
+    {
+      "code": "530111",
+      "description": "Jute fiber, raw",
+      "chapter": "53",
+      "section": "VIII",
+      "keywords": ["jute", "fiber", "textile", "plant"]
+    },
+    {
+      "code": "540111",
+      "description": "Filament yarn, synthetic",
+      "chapter": "54",
+      "section": "VIII",
+      "keywords": ["yarn", "synthetic", "textile", "fiber"]
+    },
+    {
+      "code": "550111",
+      "description": "Spun yarn, discontinuous fibers",
+      "chapter": "55",
+      "section": "VIII",
+      "keywords": ["yarn", "discontinuous", "textile", "spun"]
+    },
+    {
+      "code": "560111",
+      "description": "Wadding and nonwovens",
+      "chapter": "56",
+      "section": "VIII",
+      "keywords": ["wadding", "nonwoven", "textile", "material"]
+    },
+    {
+      "code": "570111",
+      "description": "Carpet, knotted pile",
+      "chapter": "57",
+      "section": "VIII",
+      "keywords": ["carpet", "rug", "textile", "flooring"]
+    },
+    {
+      "code": "580111",
+      "description": "Fabric, special woven",
+      "chapter": "58",
+      "section": "VIII",
+      "keywords": ["fabric", "woven", "textile", "cloth"]
+    },
+    {
+      "code": "590111",
+      "description": "Coated textile, not knitted",
+      "chapter": "59",
+      "section": "VIII",
+      "keywords": ["textile", "coated", "fabric", "cloth"]
+    },
+    {
+      "code": "600111",
+      "description": "Fabric, knitted, not elastic",
+      "chapter": "60",
+      "section": "VIII",
+      "keywords": ["knitted", "fabric", "textile", "cloth"]
+    },
+    {
+      "code": "610111",
+      "description": "Garment, shirt of cotton",
+      "chapter": "61",
+      "section": "VIII",
+      "keywords": ["shirt", "garment", "clothing", "cotton"]
+    },
+    {
+      "code": "620111",
+      "description": "Garment, suit of wool",
+      "chapter": "62",
+      "section": "VIII",
+      "keywords": ["suit", "garment", "clothing", "wool"]
+    },
+    {
+      "code": "630111",
+      "description": "Carpet, woven",
+      "chapter": "63",
+      "section": "VIII",
+      "keywords": ["carpet", "rug", "home", "flooring"]
+    },
+    {
+      "code": "640111",
+      "description": "Footwear, leather",
+      "chapter": "64",
+      "section": "VIII",
+      "keywords": ["footwear", "shoe", "leather", "apparel"]
+    },
+    {
+      "code": "650111",
+      "description": "Hat, felt",
+      "chapter": "65",
+      "section": "VIII",
+      "keywords": ["hat", "felt", "headwear", "apparel"]
+    },
+    {
+      "code": "660111",
+      "description": "Umbrella, not for rain",
+      "chapter": "66",
+      "section": "VIII",
+      "keywords": ["umbrella", "shade", "accessory", "apparel"]
+    },
+    {
+      "code": "670111",
+      "description": "Feather, down, preparation",
+      "chapter": "67",
+      "section": "VIII",
+      "keywords": ["feather", "down", "filling", "material"]
+    },
+    {
+      "code": "680111",
+      "description": "Stone, natural",
+      "chapter": "68",
+      "section": "IX",
+      "keywords": ["stone", "rock", "natural", "material"]
+    },
+    {
+      "code": "690111",
+      "description": "Ceramic, brick",
+      "chapter": "69",
+      "section": "IX",
+      "keywords": ["ceramic", "brick", "clay", "building"]
+    },
+    {
+      "code": "700111",
+      "description": "Glass, cast",
+      "chapter": "70",
+      "section": "IX",
+      "keywords": ["glass", "cast", "transparent", "material"]
+    },
+    {
+      "code": "710111",
+      "description": "Pearl, natural",
+      "chapter": "71",
+      "section": "IX",
+      "keywords": ["pearl", "jewelry", "precious", "gem"]
+    },
+    {
+      "code": "720110",
+      "description": "Iron, unwrought",
+      "chapter": "72",
+      "section": "XV",
+      "keywords": ["iron", "metal", "unwrought", "raw"]
+    },
+    {
+      "code": "730110",
+      "description": "Pipe, iron or steel",
+      "chapter": "73",
+      "section": "XV",
+      "keywords": ["pipe", "iron", "steel", "tubular"]
+    },
+    {
+      "code": "740110",
+      "description": "Copper, unwrought",
+      "chapter": "74",
+      "section": "XV",
+      "keywords": ["copper", "metal", "unwrought", "raw"]
+    },
+    {
+      "code": "750110",
+      "description": "Nickel, unwrought",
+      "chapter": "75",
+      "section": "XV",
+      "keywords": ["nickel", "metal", "unwrought", "raw"]
+    },
+    {
+      "code": "760110",
+      "description": "Aluminum, unwrought",
+      "chapter": "76",
+      "section": "XV",
+      "keywords": ["aluminum", "metal", "unwrought", "raw"]
+    },
+    {
+      "code": "770111",
+      "description": "Lead, unwrought",
+      "chapter": "77",
+      "section": "XV",
+      "keywords": ["lead", "metal", "unwrought", "raw"]
+    },
+    {
+      "code": "780110",
+      "description": "Tin, unwrought",
+      "chapter": "78",
+      "section": "XV",
+      "keywords": ["tin", "metal", "unwrought", "raw"]
+    },
+    {
+      "code": "790110",
+      "description": "Zinc, unwrought",
+      "chapter": "79",
+      "section": "XV",
+      "keywords": ["zinc", "metal", "unwrought", "raw"]
+    },
+    {
+      "code": "800110",
+      "description": "Tin, unwrought",
+      "chapter": "80",
+      "section": "XV",
+      "keywords": ["tin", "metal", "unwrought", "raw"]
+    },
+    {
+      "code": "810110",
+      "description": "Tungsten, unwrought",
+      "chapter": "81",
+      "section": "XV",
+      "keywords": ["tungsten", "metal", "rare", "raw"]
+    },
+    {
+      "code": "820111",
+      "description": "Tool, steel",
+      "chapter": "82",
+      "section": "XV",
+      "keywords": ["tool", "steel", "implement", "hardware"]
+    },
+    {
+      "code": "830111",
+      "description": "Hardware of iron",
+      "chapter": "83",
+      "section": "XV",
+      "keywords": ["hardware", "iron", "fastener", "metal"]
+    },
+    {
+      "code": "840111",
+      "description": "Engine, internal combustion",
+      "chapter": "84",
+      "section": "XVI",
+      "keywords": ["engine", "motor", "combustion", "machinery"]
+    },
+    {
+      "code": "850110",
+      "description": "Motor, electric",
+      "chapter": "85",
+      "section": "XVI",
+      "keywords": ["motor", "electric", "machinery", "equipment"]
+    },
+    {
+      "code": "860111",
+      "description": "Railway locomotive",
+      "chapter": "86",
+      "section": "XVI",
+      "keywords": ["locomotive", "railway", "train", "transport"]
+    },
+    {
+      "code": "870111",
+      "description": "Bicycle parts",
+      "chapter": "87",
+      "section": "XVII",
+      "keywords": ["bicycle", "part", "component", "vehicle"]
+    },
+    {
+      "code": "880111",
+      "description": "Aircraft, powered",
+      "chapter": "88",
+      "section": "XVII",
+      "keywords": ["aircraft", "airplane", "aviation", "transport"]
+    },
+    {
+      "code": "890111",
+      "description": "Ship, boat",
+      "chapter": "89",
+      "section": "XVII",
+      "keywords": ["ship", "boat", "vessel", "maritime"]
+    },
+    {
+      "code": "900111",
+      "description": "Optical element, lens",
+      "chapter": "90",
+      "section": "XVIII",
+      "keywords": ["optical", "lens", "glass", "precision"]
+    },
+    {
+      "code": "910111",
+      "description": "Watch, wrist",
+      "chapter": "91",
+      "section": "XVIII",
+      "keywords": ["watch", "timepiece", "wrist", "jewelry"]
+    },
+    {
+      "code": "920111",
+      "description": "Musical instrument",
+      "chapter": "92",
+      "section": "XVIII",
+      "keywords": ["musical", "instrument", "entertainment", "music"]
+    },
+    {
+      "code": "930111",
+      "description": "Arms, firearms",
+      "chapter": "93",
+      "section": "XVIII",
+      "keywords": ["arms", "firearm", "weapon", "ammunition"]
+    },
+    {
+      "code": "940111",
+      "description": "Furniture, wooden",
+      "chapter": "94",
+      "section": "XVIII",
+      "keywords": ["furniture", "wood", "indoor", "home"]
+    },
+    {
+      "code": "950111",
+      "description": "Toy, plastic",
+      "chapter": "95",
+      "section": "XVIII",
+      "keywords": ["toy", "game", "plastic", "entertainment"]
+    },
+    {
+      "code": "960111",
+      "description": "Broom, natural fiber",
+      "chapter": "96",
+      "section": "XVIII",
+      "keywords": ["broom", "brush", "cleaning", "household"]
+    },
+    {
+      "code": "970111",
+      "description": "Art work, original",
+      "chapter": "97",
+      "section": "XVIII",
+      "keywords": ["art", "original", "collectible", "antique"]
+    },
+    {
+      "code": "980111",
+      "description": "Special classification, miscellaneous",
+      "chapter": "98",
+      "section": "XVIII",
+      "keywords": ["miscellaneous", "special", "other", "unclassified"]
+    },
+    {
+      "code": "990111",
+      "description": "Commodity code not elsewhere specified",
+      "chapter": "99",
+      "section": "XVIII",
+      "keywords": ["not elsewhere specified", "nes", "miscellaneous", "other"]
+    }
+  ]
+}

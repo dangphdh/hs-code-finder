@@ -1,0 +1,56 @@
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# Testing
+/coverage
+
+# Production
+/dist
+/build
+
+# Misc
+.DS_Store
+.env
+.env.local
+.env.*.local
+*.pem
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.log
+
+# API Keys (never commit)
+*.key
+*.secret
+api-keys.json
+
+# Build files
+*.tsbuildinfo
+
+# Cache
+.eslintcache
+.next/
+out/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+Thumbs.db
+.DS_Store

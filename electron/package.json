@@ -1,0 +1,80 @@
+{
+  "name": "hs-code-finder-desktop",
+  "version": "1.0.0",
+  "description": "HS Code Finder - Desktop Application for searching harmonized system codes using vector search",
+  "main": "electron/main.ts",
+  "homepage": "./",
+  "author": "Your Name",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:web\" \"wait-on http://localhost:5173 && electron .\"",
+    "dev:web": "vite",
+    "dev:electron": "electron .",
+    "build": "npm run build:web && npm run build:electron",
+    "build:web": "vite build",
+    "build:electron": "tsc --project electron/tsconfig.json",
+    "start": "electron dist/electron/main.js",
+    "pack": "electron-builder --dir",
+    "dist": "npm run build && electron-builder",
+    "dist:win": "npm run build && electron-builder --win",
+    "dist:mac": "npm run build && electron-builder --mac",
+    "dist:linux": "npm run build && electron-builder --linux",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "crypto-js": "^4.2.0",
+    "lucide-react": "^0.263.1",
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@types/node": "^20.0.0",
+    "@types/crypto-js": "^4.1.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.0",
+    "@vitejs/plugin-react": "^4.1.0",
+    "tailwindcss": "^3.3.0",
+    "postcss": "^8.4.0",
+    "autoprefixer": "^10.4.0",
+    "electron": "^27.0.0",
+    "electron-builder": "^24.9.1",
+    "electron-is-dev": "^2.0.0",
+    "fs-extra": "^11.1.1",
+    "concurrently": "^8.2.0",
+    "wait-on": "^7.0.0"
+  },
+  "build": {
+    "appId": "com.hscodefinder.app",
+    "productName": "HS Code Finder",
+    "files": [
+      "dist/**/*",
+      "node_modules/**/*",
+      "package.json"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    },
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ],
+      "certificateFile": null,
+      "certificatePassword": null
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "HS Code Finder"
+    },
+    "portable": {
+      "artifactName": "${productName}-${version}.exe"
+    }
+  }
+}
